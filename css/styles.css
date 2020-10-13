@@ -34,7 +34,8 @@ body::after {
 header {
   width: 100%;
   background: yellow;
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 .header_img {
   position: relative;
@@ -91,8 +92,26 @@ nav a:hover {
 /* left block and right block */
 aside.container {
   width: 20%;
-  height: 400px;
-  background-color: green;
+}
+.aside_card {
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 15px 0;
+}
+.aside_card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.aside_card p {
+  margin: 15px;
+}
+.aside_card.left a {
+  display: block;
+  text-decoration: none;
+  color: rgb(162, 211, 95);
+  margin: 15px;
 }
 /* /left block and right block */
 
