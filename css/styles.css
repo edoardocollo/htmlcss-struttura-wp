@@ -14,6 +14,10 @@
 .fr {
   float: right;
 }
+.radius {
+  border-radius: 5px;
+}
+
 
 /* /utility class */
 
@@ -33,7 +37,6 @@ body::after {
 /* header section */
 header {
   width: 100%;
-  background: yellow;
   margin-top: 50px;
   margin-bottom: 10px;
 }
@@ -44,18 +47,19 @@ header {
   background-size: cover;
   border: 15px solid white;
 }
-#motto_container {
-  display: inline-block;
-  position: absolute;
+.motto_container {
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  text-transform: uppercase;
-  font-size: 40px;
-  padding: 20px;
-  border: 8px solid white;
+  width: 400px;
+  height: 157px;
+  background-image: url('../img/natural-logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 nav {
   height: 46px;
   background-color: #504741;
@@ -97,21 +101,35 @@ aside.container {
   width: 100%;
   margin-bottom: 25px;
   background-color: white;
-  padding: 15px 0;
+  padding: 20px 15px;
+  position:relative;
+}
+.aside_card.left h3 {
+  text-align: center;
 }
 .aside_card h3 {
-  text-align: center;
-  margin-bottom: 15px;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 .aside_card p {
-  margin: 15px;
 }
 .aside_card.left a {
   display: block;
   text-decoration: none;
   color: rgb(162, 211, 95);
-  margin: 15px;
+  margin-bottom: 15px;
+}
+.fas.fa-rss {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+}
+.fas.fa-rss:hover {
+  color:rgb(162, 211, 95);
+}
+i:hover {
+  cursor: pointer;
 }
 /* /left block and right block */
 
@@ -119,8 +137,18 @@ aside.container {
 /* main content center block */
 main {
   width: 60%;
-  height: 400px;
-  background-color: pink;
+  margin: auto;
+  padding: 0 20px;
+}
+.main_content.card {
+  padding: 30px 20px;
+  background-color: white;
+}
+.main_content.card h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 45px;
+  text-shadow: 3px 3px 3px gray;
 }
 /* /main content center block */
 
@@ -128,7 +156,28 @@ main {
 /* footer block */
 footer {
   width: 100%;
-  height: 100px;
-  background-color: lightblue;
+  background-color: white;
+  margin-bottom: 50px;
+  color: gray;
+  text-align: center;
+  padding: 10px 0;
 }
+footer h3 {
+  margin-bottom: 10px;
+}
+footer hr {
+  width: 98%;
+  margin: auto;
+}
+.footer_icon {
+  margin: 10px;
+}
+.footer_icon i{
+  font-size: 40px;
+  margin: 0 150px;
+}
+.footer_icon i:hover {
+  color: rgb(162, 211, 95);
+}
+
 /* /footer block */
