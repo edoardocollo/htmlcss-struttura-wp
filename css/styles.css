@@ -14,6 +14,7 @@
 .fr {
   float: right;
 }
+
 /* /utility class */
 
 
@@ -33,19 +34,57 @@ body::after {
 header {
   width: 100%;
   background: yellow;
+  margin: 50px 0;
 }
 .header_img {
-  height: 400px;
+  position: relative;
+  height: 275px;
   background-image: url('https://s0.wp.com/wp-content/themes/premium/natural/images/natural-default-header.jpg');
+  background-size: cover;
   border: 15px solid white;
 }
+#motto_container {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 20px;
+  border: 8px solid white;
+}
 nav {
-  height: 50px;
-  background-color: brown;
+  height: 46px;
+  background-color: #504741;
   color: #cbd0cf;
   text-align: center;
-  text-decoration: none;
+  line-height: 46px;
 }
+#nav_link_container {
+  display: inline-block;
+}
+nav a{
+  display: block;
+  float: left;
+  height: 46px;
+  color: #cbd0cf;
+  font-size: .75em;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 0 20px ;
+  border-top: 1px solid #615954;
+  border-right: 1px solid #615954;
+  border-bottom: 1px solid #3c3530;
+  border-left: 1px solid #615954;
+
+}
+nav a:hover {
+  background-color: #302b27;
+}
+
 /* /header section */
 
 
